@@ -7,7 +7,7 @@ ngDescribe({
     it('should throw exception on undefined config param', testThrowOnUndefined);
 
     function testGetConfiguration() {
-      // Having
+      // Given
       const [config, configService] = _initConfig();
 
       // When
@@ -18,7 +18,7 @@ ngDescribe({
     }
 
     function testThrowOnUndefined() {
-      // Having
+      // Given
       const [config, configService] = _initConfig();
 
       // When

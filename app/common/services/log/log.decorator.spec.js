@@ -5,7 +5,7 @@ ngDescribe({
   tests: function(deps) {
     it('should add timestamp to debug', testAddTimestampToDebug);
     function testAddTimestampToDebug() {
-      // Having
+      // Given
       let originalService = {debug: (message) => message};
       let decorator = new LogDecorator(originalService);
 

@@ -8,7 +8,7 @@ ngDescribe({
     it('should return a config service instance', testInstantiateConfigService);
 
     function testConfigRegistration() {
-      // Having
+      // Given
       let config = {plip: 'plop'};
       let configurationProvider = new ConfigProvider();
 
@@ -20,7 +20,7 @@ ngDescribe({
     }
 
     function testInstantiateConfigService() {
-      // Having
+      // Given
       let configurationProvider = new ConfigProvider();
 
       // When

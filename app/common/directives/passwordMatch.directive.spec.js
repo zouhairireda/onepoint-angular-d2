@@ -10,7 +10,7 @@ ngDescribe({
     it('should add error when password change', testAddErrorOnChange);
 
     function testAddErrorOnDifferent() {
-      // Having
+      // Given
       let scope = deps.element.scope();
       let controller = deps.element.controller('ngModel');
       scope.password = 'test';
@@ -24,7 +24,7 @@ ngDescribe({
     }
 
     function testNotAddErrorOnSame() {
-      // Having
+      // Given
       let scope = deps.element.scope();
       let controller = deps.element.controller('ngModel');
       scope.password = 'test';
@@ -38,7 +38,7 @@ ngDescribe({
     }
 
     function testAddErrorOnChange() {
-      // Having
+      // Given
       let scope = deps.element.scope();
       let controller = deps.element.controller('ngModel');
       scope.password = 'test';

@@ -7,7 +7,12 @@ export default class LoginPage extends BasePage {
   }
 
   clickFillFormLink() {
-    element(by.css('.main-container .fill-form')).click();
+    return new Promise((resolve) => {
+      element(by.css('.main-container .fill-form')).then(() => {
+        element(by.css('.main-container .fill-form')).click();
+        resolve();
+      });
+    });
   }
 
   submitForm() {

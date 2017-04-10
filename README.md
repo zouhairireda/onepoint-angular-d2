@@ -2,10 +2,11 @@
 
 ## Technical requirements
 
-## Technical requirements
+### Chrome
 
-### Node.js
-https://nodejs.org/en/ 
+- Chrome `https://www.google.fr/chrome/browser/desktop/index.html` and binary declared in path
+- Node.js `https://nodejs.org/en/`
+- JRE 8 `https://www.oracle.com/index.html`
 
 ### Npm global package
 ```
@@ -22,7 +23,7 @@ https://git-scm.com/
 Installation of Chrome browser
 Add Chrome bin in the PATH
 
-## Course participant installation instructions TODO
+## Course participant installation instructions
 
 You must meet the technical requirements to follow the following steps
 - Open a new shell

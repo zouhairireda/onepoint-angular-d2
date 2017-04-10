@@ -10,9 +10,10 @@ describe('Login Page:', () => {
 
   function testRedirectLoginOk() {
 
-    page.clickFillFormLink();
-    page.submitForm();
-    expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + '/' + new AccountPage().url);
+    page.clickFillFormLink().then(() => {
+      page.submitForm();
+      expect(browser.getCurrentUrl()).toEqual(browser.baseUrl + '/' + new AccountPage().url);
+    });
   }
 
 });
